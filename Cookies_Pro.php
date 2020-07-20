@@ -50,16 +50,13 @@ class  plgSystemCookies_Pro extends JPlugin
     function onAfterRender()
     {
         
-        global $mainframe, $database;
+        //~ global $mainframe, $database;
         
         //get Params
         $message = $this->params->get('mensaje', '');
         $buttomText = $this->params->get('buttomText', '');
         $URLLegal = $this->params->get('urlLegal', '');
         $urlLegalText = $this->params->get('urlLegalText', '');
-        error_log($URLLegal);
-        error_log($urlLegalText);
-
         $width = $this->params->get('ancho', '0');
         $background = $this->params->get('background', '');
         $colorText = $this->params->get('color', '');
@@ -67,8 +64,8 @@ class  plgSystemCookies_Pro extends JPlugin
         $pading_bottom = $this->params->get('pading_bottom', '');
         $posicion = $this->params->get('posicion', '');
         $button_style = $this->params->get('button_style', '');
-	$jquery_charge = $this->params->get('jquery_charge', '');
-	$agreeCookies = $this->params->get('agreeCookies', '');
+        $jquery_charge = $this->params->get('jquery_charge', '');
+        $agreeCookies = $this->params->get('agreeCookies', '');
         $agreeAnalitycs = $this->params->get('agreeAnalitycs', '');
         
         if ($width == "0") {
