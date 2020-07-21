@@ -37,12 +37,10 @@ class  plgSystemCookies_Pro extends JPlugin
      * @param     array  $config  An array that holds the plugin configuration
      * @since    1.0
      */
-    function plgSystemCookies_Pro(& $subject, $config)
+    public function __construct(& $subject, $config)
     {
         parent::__construct($subject, $config);
-    
     }
-
     /**
     * Start the output
     *
